@@ -1,12 +1,15 @@
 .navbar {
-    background-color: rgb(39, 207, 249);
-    padding: 5px;
+    background-color: #e8cc4d;
 }
-li {
-    display: inline;
-    padding: 0px 10px;
-}
-a {
+
+.navbar a{
+    display:inline-block;
+    padding: 15px;
+    background-color: #e8cc4d;
+    color:#3a3731;
     text-decoration: none;
-    color: #3a3731;
+}
+.navbar a:hover{
+    color:#e8cc4d;
+    background-color: #3a3731;
 }
