@@ -1,0 +1,83 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* base styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f4f2;
+  color: #3a3731;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* headers are bolded */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; 
+  margin: 0.5em 0;
+}
+
+/* accent coloring for links */
+a {
+  color: #e8cc4d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* coloring for hovering on links */
+a:hover {
+  color: #d4b63f;
+}
+
+/* button styling */
+button,
+.btn {
+  background-color: #e8cc4d;
+  color: #3a3731;
+  border: none;
+  padding: 0.75em 1.25em;
+  border-radius: 9999px; /* pill-shaped */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* coloring for hovering on buttons */ 
+button:hover,
+.btn:hover {
+  background-color: #d4b63f;
+}
+
+/* nav bar styling */
+nav {
+  background-color: #f6f4f2;
+  border-bottom: 2px solid #e8cc4d;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: center; 
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+}
+
+/* the rest of this is just nav bar styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em; 
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  font-weight: 600;
+  color: #3a3731;
+}
+
+nav ul li a:hover {
+  color: #e8cc4d;
+}
