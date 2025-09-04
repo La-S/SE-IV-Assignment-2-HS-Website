@@ -1,6 +1,6 @@
 document.write(
     `
-    <link rel="stylesheet" href="/styling/styling.css">
+    <link rel="stylesheet" href="./styling/styling.css">
 
     <div class='navbar'>
         <a href='./index.html'>Home</a></li>

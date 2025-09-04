@@ -49,10 +49,9 @@ button:hover,
 }
 
 /* nav bar styling */
-nav {
+.navbar {
   background-color: #f6f4f2;
   border-bottom: 2px solid #e8cc4d;
-  padding: 1em 2em;
   display: flex;
   justify-content: center; 
   position: sticky; 
@@ -60,24 +59,16 @@ nav {
   z-index: 1000;
 }
 
-/* the rest of this is just nav bar styling */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2em; 
-  margin: 0;
-  padding: 0;
+.navbar a{
+  display:inline-block;
+  padding: 15px;
+  background-color: #e8cc4d;
+  color:#3a3731;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  font-weight: 600;
-  color: #3a3731;
-}
-
-nav ul li a:hover {
-  color: #e8cc4d;
+.navbar a:hover{
+  color:#e8cc4d;
+  background-color: #3a3731;
 }
