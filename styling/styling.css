@@ -72,3 +72,8 @@ button:hover,
   color:#e8cc4d;
   background-color: #3a3731;
 }
+.navbutton{
+  padding:15px;
+  background-color: #e8cc4d;
+  color:#3a3731;
+}
