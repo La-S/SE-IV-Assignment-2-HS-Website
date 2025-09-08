@@ -73,6 +73,7 @@ button:hover,
   color:#e8cc4d;
   background-color: #3a3731;
 }
+
 .navbutton{
   padding:15px;
   background-color: #e8cc4d;
@@ -94,3 +95,32 @@ button:hover,
   overflow: hidden;
 }
 
+/* Careers Landing Page */
+@media screen and (max-width:899px) {
+  /* 900 px or smaller */
+  /* Just show one item at a time */
+  .careers-grid {
+    display: grid;
+    grid: 300px 300px 300px 300px / auto-flow;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* >= 900px screen width can show two columns */
+  .careers-grid {
+    display: grid;
+    grid: 300px 300px / auto-flow;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+}
+
+.careers-grid * {
+  filter: grayscale(1);
+  transition: 500ms;
+}
+
+.careers-grid :hover {
+  filter: grayscale(0);
+}
