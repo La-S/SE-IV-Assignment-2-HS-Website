@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 /* base styling */
+
 body {
   margin: 0;
   padding: 0;
@@ -77,3 +78,19 @@ button:hover,
   background-color: #e8cc4d;
   color:#3a3731;
 }
+.accordion {
+  background-color: #dfdedd;
+  cursor: pointer;
+  padding: 15px;
+  margin-bottom: 3px;
+  width: 85%;
+  text-align: left;
+}
+.panel {
+  background-color: #f6f4f2;
+  width:85%;
+  padding-left:15px;
+  display: none;
+  overflow: hidden;
+}
+
