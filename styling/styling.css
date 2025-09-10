@@ -130,3 +130,8 @@ button:hover,
 .careers-grid :hover {
   filter: grayscale(0);
 }
+
+/* Home Page */
+.hero-image {
+  width: 100%;
+}
