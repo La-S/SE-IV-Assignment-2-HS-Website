@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Emily Forster</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styling/styling.css">
+        <style> /*this styling is specific to this page only. styling for the whole site is linked above.*/
+              .band {
+                width: 90%;
+                max-width: 1240px;
+                margin: 0 auto;
+                
+                display: grid;
+                
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-gap: 20px;
+                
+                @media (min-width: 30em) {
+                  grid-template-columns: 1fr 1fr;
+                }
+                
+                @media (min-width: 60em) {
+                  grid-template-columns: repeat(4, 1fr);
+                }
+              }
+              
+              .card {
+                background: #e8cc4d;
+                text-decoration: none;
+                color: #444;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: column;
+                min-height: 100%;
+                
+                /*hover */
+                position: relative;
+                top: 0;
+                transition: all .1s ease-in;
+                  
+                /* hover state for .card */
+                .card:hover {
+                  top: -2px;
+                  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+                }
+                
+                article {
+                  padding: 20px;
+                  flex: 1;
+                  
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                }
+                
+                h1 {
+                  font-size: 20px;
+                  margin: 0;
+                  color: #333;
+                }
+                
+                p {
+                  flex: 1;
+                  line-height: 1.4;
+                }
+                
+                span {
+                  font-size: 12px;
+                  font-weight: bold;
+                  color: #999;
+                  text-transform: uppercase;
+                  letter-spacing: .05em;
+                  margin: 2em 0 0 0;
+                }
+                
+                .thumb {
+                  padding-bottom: 60%;
+                  background-size: cover;
+                  background-position: center center;
+                }
+              }
+              
+              .item-1 {
+                @media (min-width: 60em) {
+                  grid-column: 1 / span 2;
+                  h1 {
+                    font-size: 24px;
+                  }
+                }
+              }
+            </style>
+    </head>    
+    
+    <body>
+      <script src="components/navbar.js"></script>
+    <header>
+        <h1>Learn More About Computer Science!</h1>
+      </header>
+      <div class="band">
+        <div class="item-1">
+          <a href="https://ourcodeworld.com/articles/read/427/top-10-most-complex-and-bizarre-esoteric-programming-languages" class="card">
+            <div class="thumb" style="background-image: url(assets/ss-esolang.png);"></div>
+            <article>
+              <h1>Esoteric Programming Languages</h1>
+              <p>If you thought normal programming was hard, wait until you try esolangs, a weird, wacky, and whimsical way to write code.</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-2">
+          <a href="https://www.hackerrank.com/blog/the-history-of-hello-world/" class="card">
+            <div class="thumb" style="background-image: url(assets/ss-helloworld.jpeg);"></div>
+            <article>
+              <h1>How "Hello World!" Changed the World</h1>
+              <p> Learn the origin of what might just be the most popular "program" ever written!</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-3">
+          <a href="https://www.rasmussen.edu/degrees/technology/blog/famous-computer-scientists-who-impacted-the-industry/" class="card">
+            <div class="thumb" style="background-image: url(assets/ss-adalovelace.jpg);"></div>
+            <article>
+              <h1>Founding Fathers of Computer Science</h1>
+              <p>Learn about the men and women who have shaped computer science as we know it today.</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-4">
+          <a href="https://www.computersciencedegreehub.com/movies-about-computer-science/" class="card">
+            <div class="thumb" style="background-image: url(assets/ss-matrix.avif);"></div>
+            <article>
+              <h1>Media Inspired by Computer Science</h1>
+              <p>Enjoy these movies and shows about computer science!</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-5">
+          <a href="https://www.w3schools.com/" class="card">
+            <div class="thumb" style="background-image: url(assets/ss-htmlex.png);"></div>
+            <article>
+              <h1>Learn Website Development</h1>
+              <p> Use W3Schools to learn web development (and so much more) for free!</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-6">
+          <a href="https://leetcode.com/" class="card">
+            <div class="thumb" style="background-image: url(assets/ss-leetcode.png);"></div>
+            <article>
+              <h1>Competitive Programming with Leetcode</h1>
+              <p>Prepare for technical interviews with the world's most popular website for coding problems and algorithms.</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-7">
+          <a href="https://www.asciiart.eu/" class="card">
+            <div class="thumb" style="background-image: url(assets/ss-asciizebra.png);"></div>
+            <article>
+              <h1>Art with ASCII</h1>
+              <p>Not all code has to be practial- you can use it to create art!</p>
+            </article>
+          </a>
+        </div>
+      </div>
+      </body>
+</html>
