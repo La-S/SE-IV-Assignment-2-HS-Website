@@ -2,13 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 /* base styling */
+
 body {
-  margin: 0;
+  margin:0;
   padding: 0;
   background-color: #f6f4f2;
   color: #3a3731;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
+}
+
+main{
+  margin-left: 5%;
+  margin-right:10%;
 }
 
 /* headers are bolded */
@@ -71,4 +77,56 @@ button:hover,
 .navbar a:hover{
   color:#e8cc4d;
   background-color: #3a3731;
+}
+
+.navbutton{
+  padding:15px;
+  background-color: #e8cc4d;
+  color:#3a3731;
+  border-radius: 9999px;
+}
+.accordion {
+  background-color: #dfdedd;
+  cursor: pointer;
+  padding: 15px;
+  margin-bottom: 3px;
+  width: 85%;
+  text-align: left;
+}
+.panel {
+  background-color: #f6f4f2;
+  width:85%;
+  padding-left:15px;
+  display: none;
+  overflow: hidden;
+}
+
+/* Careers Landing Page */
+@media screen and (max-width:899px) {
+  /* 900 px or smaller */
+  /* Just show one item at a time */
+  .careers-grid {
+    display: grid;
+    grid: 300px 300px 300px 300px / auto-flow;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* >= 900px screen width can show two columns */
+  .careers-grid {
+    display: grid;
+    grid: 300px 300px / auto-flow;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+}
+
+.careers-grid * {
+  filter: grayscale(1);
+  transition: 500ms;
+}
+
+.careers-grid :hover {
+  filter: grayscale(0);
 }
