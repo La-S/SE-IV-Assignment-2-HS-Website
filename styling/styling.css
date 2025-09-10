@@ -79,7 +79,38 @@ button:hover,
   color:#e8cc4d;
   background-color: #3a3731;
 }
-
+.se-title {
+    background-image: url("../images/software-dev.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;             
+    padding: 40px;        
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.ai-title {
+    background-image: url("../images/ai-engineer.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;             
+    padding: 40px;        
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.da-title {
+    background-image: url("../images/data-analyist.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;             
+    padding: 40px;        
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.cs-title {
+    background-image: url("../images/cyber.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;             
+    padding: 40px;        
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
 .navbutton{
   padding:15px;
   background-color: #e8cc4d;
