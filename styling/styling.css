@@ -17,8 +17,9 @@ main{
   margin-right:10%;
 }
 
+
 /* headers are bolded */
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-weight: 700; 
   margin: 0.5em 0;
 }
@@ -78,7 +79,38 @@ button:hover,
   color:#e8cc4d;
   background-color: #3a3731;
 }
-
+.se-title {
+    background-image: url("../images/software-dev.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;             
+    padding: 40px;        
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.ai-title {
+    background-image: url("../images/ai-engineer.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;             
+    padding: 40px;        
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.da-title {
+    background-image: url("../images/data-analyist.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;             
+    padding: 40px;        
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.cs-title {
+    background-image: url("../images/cyber.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;             
+    padding: 40px;        
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
 .navbutton{
   padding:15px;
   background-color: #e8cc4d;
@@ -102,7 +134,7 @@ button:hover,
 }
 
 /* Careers Landing Page */
-@media screen and (max-width:899px) {
+@media screen and (max-width:1199px) {
   /* 900 px or smaller */
   /* Just show one item at a time */
   .careers-grid {
@@ -112,7 +144,7 @@ button:hover,
     gap: 10px;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   /* >= 900px screen width can show two columns */
   .careers-grid {
     display: grid;
@@ -122,13 +154,31 @@ button:hover,
   }
 }
 
-.careers-grid * {
+.careers-grid div * {
   filter: grayscale(1);
   transition: 500ms;
 }
 
-.careers-grid :hover {
+.careers-grid-item {
+  width: 300px;
+}
+.careers-grid-item img {
+  position: absolute;
+  height: 300px;
+}
+.career-title {
+  color: #e8cc4d;;
+  position: relative;
+  padding-left: 10px;
+}
+
+.careers-grid :hover * {
   filter: grayscale(0);
+  cursor: pointer;
+}
+/* Home Page */
+.hero-image {
+  width: 100%;
 }
 
 /* Home Page */
